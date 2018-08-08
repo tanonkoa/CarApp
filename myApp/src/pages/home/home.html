@@ -1,0 +1,33 @@
+<script src= "home.ts"> </script>
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to carApp!</h2>
+  <h1>Accelerometer:</h1>
+  <div> <p> X: {{x}}</p> </div>
+  <div> <p> Y: {{y}}</p> </div>
+  <div> <p> Z: {{z}}</p> </div>
+  <div> <p> Timestamp: {{timestamp}} </p> </div>
+  <button ion-button (click)="start()"> Start  </button> <br/>
+  <button ion-button (click)="stop()"> Stop  </button> <br/>
+
+
+  <h1>Geolocation: </h1>
+  <div> <p> Lattitude: {{lattitude}}</p> </div>
+  <div> <p> Longitude: {{longitude}}</p> </div>
+  <div> <p> Speed: {{speed}}</p> </div>
+  <button ion-button (click)="startLocation()"> Start  </button> <br/>
+  <button ion-button (click)="stopLocation()"> Stop  </button> <br/>
+
+  <h1>Take picture</h1>
+  <button ion-button (click)="havePicture()"> Take picture  </button> <br/>
+  <p><img src="{{ picture }}"></p><br/>
+  
+  
+
+</ion-content>
