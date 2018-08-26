@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
-import { MemoryPage} from '../memory/memory'
+import { MemoryPage} from '../memory/memory';
 
 @Component({
   templateUrl: 'tabs.html'
